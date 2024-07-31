@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CustomTabView: View {
     @State private var tabSelection = "house.fill"
-    
+
     let tabs = ["house.fill","calendar","tv.fill","bolt.fill","gearshape.fill"]
     
     var body: some View {
@@ -32,6 +32,7 @@ struct CustomTabView: View {
             
             customTabBar
         }
+        .navigationBarBackButtonHidden(true)
     }
     
     private var customTabBar: some View {
